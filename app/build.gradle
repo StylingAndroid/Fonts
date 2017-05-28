@@ -2,14 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 'android-O'
-    buildToolsVersion "26.0.0 rc1"
+    buildToolsVersion "26.0.0 rc2"
     defaultConfig {
         applicationId "com.stylingandroid.o.fonts"
-        minSdkVersion 'O'
-        targetSdkVersion 'O'
+        minSdkVersion 21
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -21,6 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:26.0.0-beta1'
 }
 
 apply from: '../config/static_analysis.gradle'
