@@ -16,19 +16,19 @@ public class MainActivity extends Activity {
         Typeface pacifico = ResourcesCompat.getFont(this, R.font.pacifico);
         Typeface nunito = ResourcesCompat.getFont(this, R.font.nunito);
 
-        TextView pacificoText = findViewById(R.id.pacifico);
+        TextView pacificoText = (TextView) findViewById(R.id.pacifico);
         pacificoText.setTypeface(pacifico);
 
-        TextView regular = findViewById(R.id.nunito_regular);
+        TextView regular = (TextView) findViewById(R.id.nunito_regular);
         regular.setTypeface(nunito, Typeface.NORMAL);
-        TextView bold = findViewById(R.id.nunito_bold);
+        TextView bold = (TextView) findViewById(R.id.nunito_bold);
         bold.setTypeface(nunito, Typeface.BOLD);
-        TextView italic = findViewById(R.id.nunito_italic);
+        TextView italic = (TextView) findViewById(R.id.nunito_italic);
         italic.setTypeface(nunito, Typeface.ITALIC);
-        TextView boldItalic = findViewById(R.id.nunito_bold_italic);
+        TextView boldItalic = (TextView) findViewById(R.id.nunito_bold_italic);
         boldItalic.setTypeface(nunito, Typeface.BOLD_ITALIC);
 
-        TextView text = findViewById(R.id.nunito_programmatic);
+        TextView text = (TextView) findViewById(R.id.nunito_programmatic);
         text.setTypeface(nunito, Typeface.BOLD_ITALIC);
     }
 }
