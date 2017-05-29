@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Typeface nunito = ResourcesCompat.getFont(this, R.font.nunito);
 
-        TextView text = (TextView) findViewById(R.id.nunito_programmatic);
+        TextView text = findViewById(R.id.nunito_programmatic);
         text.setTypeface(nunito, Typeface.BOLD_ITALIC);
     }
 }
